@@ -1,9 +1,5 @@
 theme: jekyll-theme-minimal
 
-# Welcome to my professional website.
+title: Welcome to my professional website.
 
-Here is my [Google scholar profile](https://scholar.google.fr/citations?hl=en&user=-WJKy_EAAAAJ&view_op=list_works&sortby=pubdate).
-
-Thanks.
-
-**_under construction_**
+description:Here is my [Google scholar profile](https://scholar.google.fr/citations?hl=en&user=-WJKy_EAAAAJ&view_op=list_works&sortby=pubdate).
