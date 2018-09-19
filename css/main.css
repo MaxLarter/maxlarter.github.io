@@ -1,9 +1,21 @@
 ﻿body { font: 16px;
 	font-family: "Times New Roman", Times, serif;
 	line-height: 24px;
-    margin: 60px auto;
-    width: 70%;
+    margin-top: 5mm;
+    margin-bottom: 20mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    width: 90%;
 }
+
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 20mm 20mm 20mm 20mm;  
+} 
+
 nav ul, footer ul {
     font-family: "Times New Roman", Times, serif;
     padding: 0px;
@@ -28,16 +40,18 @@ a:hover {
     text-decoration: underline;
 }
 h1 { font-family: "Times New Roman", Times, serif;
-	margin: 0 0 16px 0;
+	margin: 0 0 0 0;
 	padding: 0 0 16px 0;
 	font-size: 42px; 
 	font-weight: bold; 
 	letter-spacing: -2px; 
-	border-bottom: 1px solid #999; }
+	border-bottom: 1px solid #999; 
+	page-break-after: avoid;}
 	
 h2 { font-size: 20px;
  margin: 0 0 6px 0; 
- position: relative; 
+ position: relative;
+ page-break-after: avoid; 
  }
  
 h2 span { position: absolute; 
@@ -47,12 +61,15 @@ font-style: italic;
 font-family: "Times New Roman", Times, serif;
 font-size: 16px; 
 color: #999; 
-font-weight: normal; }
+font-weight: normal; 
+page-break-after: avoid;}
 
 p { font-family: "Times New Roman", Times, serif;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.4em;
     color: #333;
+	margin-right: 1em;
+	page-break-inside: avoid;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -73,9 +90,11 @@ hr {
 table {
   font-family: "Times New Roman", Times, serif;
   border-collapse: collapse;
-  border: 3px solid white;
+  border: 1mm solid white;
   letter-spacing: 1px;
   font-size: 1rem;
+  width:auto;
+  height:auto;
 }
 
 td, th {
@@ -121,6 +140,6 @@ dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; 
 dd { width: 600px; float: right; }
 dd.clear { float: none; margin: 0; height: 15px; }
 .clear { clear: both; }
-#page-wrap { width: 800px; margin: 40px auto 60px; }
-#pic { float: right; margin: -30px 0 0 0; }
+#page-wrap { width: 800px; margin: 40px auto 60px auto; }
+#pic { float: right; margin: 0 10mm 0 0; }
 
