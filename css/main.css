@@ -1,11 +1,11 @@
 ﻿body { font: 16px;
 	font-family: "Times New Roman", Times, serif;
 	line-height: 24px;
-    margin-top: 5mm;
-    margin-bottom: 20mm;
-    margin-left: 10mm;
-    margin-right: 10mm;
-    width: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
 }
 
 @page  
@@ -49,7 +49,7 @@ h1 { font-family: "Times New Roman", Times, serif;
 	page-break-after: avoid;}
 	
 h2 { font-size: 20px;
- margin: 0 0 6px 0; 
+ margin: 0 0 0 0; 
  position: relative;
  page-break-after: avoid; 
  }
@@ -95,10 +95,11 @@ table {
   font-size: 1rem;
   width:auto;
   height:auto;
+  margin: 0 0 2mm 0;
 }
 
 td, th {
-   padding: 10px 20px;
+   padding: 6px 20px;
 }
 
 table td, table td * {
@@ -140,6 +141,6 @@ dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; 
 dd { width: 600px; float: right; }
 dd.clear { float: none; margin: 0; height: 15px; }
 .clear { clear: both; }
-#page-wrap { width: 800px; margin: 40px auto 60px auto; }
-#pic { float: right; margin: 0 10mm 0 0; }
+#page-wrap { width: 800px; margin: auto auto auto auto; }
+#pic { float: right; margin: auto auto auto auto; }
 
