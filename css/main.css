@@ -40,36 +40,49 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 { font-family: "Times New Roman", Times, serif;
+
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height 1.7;
 	margin: 0 0 0 0;
-	padding: 0 0 16px 0;
-	font-size: 42px; 
-	font-weight: bold; 
-	letter-spacing: -2px; 
+	padding: 0;
 	border-bottom: 1px solid #999; 
-	page-break-after: avoid;}
+	page-break-after: avoid;
+}
+
+h1 {
+	font-size: 30px; 
+}
 	
-h2 { font-size: 28px;
- margin: 0 0 0 0; 
- position: relative;
- page-break-after: avoid; 
- }
- 
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+
 h2 span { position: absolute; 
 bottom: 0; 
 right: 0; 
 font-style: italic; 
-font-family: "Times New Roman", Times, serif;
+font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 28px; 
 color: #999; 
 font-weight: normal; 
 page-break-after: avoid;}
 
+
 p { font-family: Times, serif;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 14px;
+    line-height: 1.5;
     color: #333;
-	margin: auto 1em 1.5em auto;
+	margin: 0;
 }
 footer {
     border-top: 1px solid #d5d5d5;
