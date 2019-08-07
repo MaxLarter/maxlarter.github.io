@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-		<head>
+<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126964726-1"></script>
 			<script>
@@ -10,24 +10,36 @@
 
 				gtag('config', 'UA-126964726-1');
 			</script>
-			<title>Max Larter's website</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="shortcut icon" href="">
-		</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about.html">About</a></li>
-        		<li><a href="/cv/cv.html">CV</a></li>
-        		<!--<li><a href="/blog">Blog</a></li>-->
-    		</ul>
-		</nav>
-		
-			<div class="container">
 			
-			<div class="blurb">
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+
+<body>
+	<div class="wrapper-masthead">
+		<div class="container">
+			<header class="masthead clearfix">
+				<a href="/" class="site-avatar"><img src="https://user-images.githubusercontent.com/34142856/62635435-f4a05980-b937-11e9-9429-20051d188e79.jpg"></a>
+				
+				<div class="site-info>
+					<h1 class="site-name">
+						<a href="/">Maximilian Larter, PhD</a>
+					</h1>
+					<p class="site-description">Plant Ecology and Evolution</p>
+				</div>
+				
+				<nav>
+					<a href="/">Home</a>
+					<a href="/about.html">About</a>
+					<a href="/cv/cv.html">CV</a>
+					<a href="/publications/publications.html">Publications</a>
+				</nav>
+				
+			</header>
+		</div>
+	</div>
+	
+	<div id="main" role="main" class="container">	
         <h3>Hi there, I'm Max Larter, welcome to my personal website!</h3>
 		<p>I'm currently a post-doc in the Smith Lab in at the University of Colorado in Boulder (USA). I'm working on the evolution of the anthocyanin pathway in <i>Iochroma</i>, with a particular focus on the genetic
 		mechanisms that underlie phenotypic variation. </p>
@@ -36,17 +48,19 @@
 		<div class="clear"></div>
 		<a href="/about">Read more about me...</a>
 		
-</div><!-- /.blurb -->
+	</div>
 
+    <div class="wrapper-footer">
+		<div class="container">
+			<footer class="footer">
+				<a href="mailto:maximilien.larter@gmail.com" target="_blank">email</a>
+				<a href="https://github.com/MaxLarter" target="_blank">github.com/MaxLarter</a>
+				<a href="https://scholar.google.com/citations?hl=en&user=-WJKy_EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">My google scholar profile</a>
+				<a href="https://twitter.com/MaxLarter" target="_blank">Follow me on Twitter!</a>
 			
-	</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:maximilien.larter@gmail.com" target="_blank">email</a></li>
-        		<li><a href="https://github.com/MaxLarter" target="_blank">github.com/MaxLarter</a></li>
-			<li><a href="https://scholar.google.com/citations?hl=en&user=-WJKy_EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">My google scholar profile</a></li>
-			<li><a href="https://twitter.com/MaxLarter" target="_blank">Follow me on Twitter!</a></li>
-			</ul>
-		</footer>
-	</body>
+			</footer>
+		</div>
+	</div>
+</body>
 </html>
+

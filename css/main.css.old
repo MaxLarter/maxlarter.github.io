@@ -1,0 +1,186 @@
+﻿/***************/
+/* MEYER RESET */
+/***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+body {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    /*margin: 20mm 20mm 20mm 20mm;  */
+} 
+
+nav ul, footer ul {
+    font-family: "Times New Roman", Times, serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+	font-size: 1em;
+	
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li a{
+	color: rgb(0,0,0);
+	font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+	
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height 1.7;
+	margin: 0 0 0 0;
+	padding: 0;
+	border-bottom: 1px solid #999; 
+	page-break-after: avoid;
+}
+
+h1 {
+	font-size: 30px; 
+}
+	
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+
+h2 span { position: absolute; 
+bottom: 0; 
+right: 0; 
+font-style: italic; 
+font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 28px; 
+color: #999; 
+font-weight: normal; 
+page-break-after: avoid;}
+
+
+p { font-family: Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+	margin: 0;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 1em;
+	font-family: "Times New Roman", Times, serif;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+table {
+  font-family: "Times New Roman", Times, serif;
+  border-collapse: collapse;
+  border: 1mm solid white;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width:auto;
+  height:auto;
+  margin: 0 0 2mm 0;
+}
+
+td, th {
+   padding: 6px 20px;
+}
+
+table td, table td * {
+    vertical-align: top;
+}
+
+th {
+  background-color: rgb(255,255,255);
+}
+
+td {
+  text-align: left;
+  valign: top;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(255,255,255);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(255,255,255);
+}
+
+caption {
+  padding: 10px;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+	font-size: 1em;
+}
+
+<!––new from cv page ––>
+dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+dd { width: 800px; float: right; }
+dd.clear { float: none; margin: 0; height: 15px; }
+.clear { clear: both; }
+#page-wrap { width: 800px; margin: auto auto auto auto; }
+#pic { float: right; margin: auto auto auto 3px; }
+
