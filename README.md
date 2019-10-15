@@ -10,7 +10,7 @@ Max.
 
 
 credits:
-I "borrowed" code from Auriel Fournier's website source code, hosted on github here: https://aurielfournier.github.io/
+I "borrowed" code from Auriel Fournier's website source code, hosted on github here: https://aurielfournier.github.io/. Both of us used Barry Clark's posts about making a website/blog using Jekyll and github pages. His work can be found here https://github.com/barryclark/jekyll-now and here https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 Thanks!
 
 Code for the icons in the footer was generated using SVG icon files from https://github.com/edent/SuperTinyIcons/tree/master/images/svg
