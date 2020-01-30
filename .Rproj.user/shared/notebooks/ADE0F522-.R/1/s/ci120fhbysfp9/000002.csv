@@ -5,6 +5,7 @@
 "0","    html = c(""&auml;"",""&ouml;"", ""&uuml;"",""&Auml;"","
 "0","             ""&Ouml;"", ""&Uuml;"",""&szlig;"", ""&aacute;"", ""&ntilde;"", ""&eacute;""))"
 "0","  for(i in 1:dim(dictionary)[1]){"
+"0","    x <- gsub(dictionary$symbol[i],dictionary$html[i],x)"
 "0","  }"
 "0","  x"
 "0","}"

@@ -1,15 +1,14 @@
 ---
-title: "Untitled"
+title: "Publication list"
 author: "Max Larter"
 date: "1/30/2020"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+opts_chunk$set(echo = TRUE)
 ```
-
-
 
 ```{r loads_packs, include = F, echo = F}
 # the first time you may need to re-reun this:
@@ -76,28 +75,33 @@ html_4 <- c(
 ```
 
 
-```{r get header and footer}
-dat <- noquote(readLines("index.html"))  # read data with readLines
-dat2 <- noquote(str_replace_all(dat, "[\\r\\n\\t]+", " "))
-dat3 <- noquote(str_replace_all(dat2, "[\"]", '"'))
+```{r get header and footer, warning=F, echo = F}
+dat <- noquote(readLines("index.html"))  # read in index.html to get header and footer setup 
+dat2 <- noquote(str_replace_all(dat, "[\\r\\n\\t]+", " ")) # remove the added characters cause it gets messy otherwise
+dat3 <- noquote(str_replace_all(dat2, "[\"]", '"')) # remove "escaped" quotes 
+```
 
+```{r paste_together}
+text_to_insert <- html_4 # this is the bit of text we want to add from before
 
-text_to_insert <- html_4
-
-insert_after <- which(dat %in% '\t<div id="main" role="main" class="container">')
-insert_before <- grep('<div class="wrapper-footer">', dat3)
-
+insert_after <- which(dat %in% '\t<div id="main" role="main" class="container">') # line in the index.html where the header ends: insert pubs table after this
+insert_before <- grep('<div class="wrapper-footer">', dat3) # this is the line where the index.html file footer starts: insert before this
+# function to do the insertion
 insert_line_at <- function(dat, to_insert, insert_after, insert_before){
   pre <- dat[1:insert_after]
   post <- dat[(insert_before):length(dat)]
   return(c(pre, to_insert, post))
 }
-
+# run the insertion
 dat_inserted <- insert_line_at(dat3, text_to_insert, insert_after=insert_after, insert_before = insert_before)
 
 dat_inserted2 = gsub("\u00A0", " ", dat_inserted) # this removes the unbreakable space that appeared for some unkown reason...
 
 writeLines(dat_inserted2, "publications/publications.html") # write to Publication list pages
 
+######
+# remember to commit & push to github and it's live!
+
 ```
+
 
