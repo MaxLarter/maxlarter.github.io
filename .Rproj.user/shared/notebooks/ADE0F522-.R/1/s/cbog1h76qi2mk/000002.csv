@@ -1,4 +1,3 @@
 "0","dat <- noquote(readLines(""index.html""))  # read in index.html to get header and footer setup "
-"2","incomplete final line found on 'index.html'"
 "0","dat2 <- noquote(str_replace_all(dat, ""[\\r\\n\\t]+"", "" "")) # remove the added characters cause it gets messy otherwise"
 "0","dat3 <- noquote(str_replace_all(dat2, ""[\""]"", '""')) # remove ""escaped"" quotes "
