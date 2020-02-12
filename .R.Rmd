@@ -57,7 +57,7 @@ html_2 <- html_1 %>%
   ) %>% split(.$year) %>%
     map(function(x){
       x <- x %>%
-        glue_data('<tr><td width="100%">{author} ({year}) <a href="https://scholar.google.com/scholar?oi=bibs&cluster={cid}&btnI=1&hl=en" target="_blank">{title}</a>, {journal}, {number}, Cited {cites} times</td></tr>') %>%
+        glue_data('<tr><td width="100%">{author} ({year}) <a href="https://scholar.google.com/scholar?oi=bibs&cluster={cid}&btnI=1&hl=en" target="_blank">{title}</a>, {journal}, {number} [<i>{cites} citation(s)</i>]</td></tr>') %>%
         str_replace_all("(, )+</p>", "</p>") %>%
         char2html()
       x <- c('<table><tbody>', x, '</tbody></table>')
@@ -104,10 +104,6 @@ writeLines(dat_inserted2, "publications/publications.html") # write to Publicati
 
 ```
 
-
-```{r get_citations}
-
-```
 
 
 

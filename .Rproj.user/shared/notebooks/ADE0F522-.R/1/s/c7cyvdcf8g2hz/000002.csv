@@ -17,7 +17,7 @@
 "0","  ) %>% split(.$year) %>%"
 "0","    map(function(x){"
 "0","      x <- x %>%"
-"0","        glue_data('<tr><td width=""100%"">{author} ({year}) <a href=""https://scholar.google.com/scholar?oi=bibs&cluster={cid}&btnI=1&hl=en"" target=""_blank"">{title}</a>, {journal}, {number}, Cited {cites} times</td></tr>') %>%"
+"0","        glue_data('<tr><td width=""100%"">{author} ({year}) <a href=""https://scholar.google.com/scholar?oi=bibs&cluster={cid}&btnI=1&hl=en"" target=""_blank"">{title}</a>, {journal}, {number} [<i>{cites} citation(s)</i>]</td></tr>') %>%"
 "0","        str_replace_all(""(, )+</p>"", ""</p>"") %>%"
 "0","        char2html()"
 "0","      x <- c('<table><tbody>', x, '</tbody></table>')"
