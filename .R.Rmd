@@ -105,5 +105,9 @@ writeLines(dat_inserted2, "publications/publications.html") # write to Publicati
 ```
 
 
+```{r plot co_authors_network, eval = F}
+co_auth<-get_coauthors(MaxLarter, n_coauthors = 5)
+plot_coauthors(co_auth)
+```
 
 
