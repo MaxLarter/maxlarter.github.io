@@ -5,26 +5,28 @@
 "0",""
 "0",""
 "0","library(scholar)"
+"2","The R.cache package needs to create a directory that will hold cache files. It is convenient to use  â€˜C:\Users\maxim\AppData\Local\R\R.cacheâ€™ because it follows the standard on your operating system and it remains also after restarting R. Do you wish to create the 'C:\Users\maxim\AppData\Local\R\R.cache' directory? If not, a temporary directory (C:\Users\maxim\AppData\Local\Temp\RtmpyMppRR/.Rcache) that is specific to this R session will be used. [Y/n]: "
+"0","Y"
 "0","library(tidyverse)"
 "2","Registered S3 methods overwritten by 'dbplyr':
   method         from
   print.tbl_lazy     
   print.tbl_sql      
 "
-"2","[30m-- [1mAttaching packages[22m --------------------------------------- tidyverse 1.3.0 --[39m
+"2","[30m-- [1mAttaching packages[22m ----------------------------------------------------------------------- tidyverse 1.3.0 --[39m
 "
 "2","[30m[32mv[30m [34mggplot2[30m 3.3.2     [32mv[30m [34mpurrr  [30m 0.3.4
-[32mv[30m [34mtibble [30m 3.0.3     [32mv[30m [34mdplyr  [30m 1.0.0
-[32mv[30m [34mtidyr  [30m 1.1.1     [32mv[30m [34mstringr[30m 1.4.0
-[32mv[30m [34mreadr  [30m 1.3.1     [32mv[30m [34mforcats[30m 0.5.0[39m
+[32mv[30m [34mtibble [30m 3.0.4     [32mv[30m [34mdplyr  [30m 1.0.2
+[32mv[30m [34mtidyr  [30m 1.1.2     [32mv[30m [34mstringr[30m 1.4.0
+[32mv[30m [34mreadr  [30m 1.4.0     [32mv[30m [34mforcats[30m 0.5.0[39m
 "
-"2","[30m-- [1mConflicts[22m ------------------------------------------ tidyverse_conflicts() --
+"2","[30m-- [1mConflicts[22m -------------------------------------------------------------------------- tidyverse_conflicts() --
 [31mx[30m [34mdplyr[30m::[32mfilter()[30m masks [34mstats[30m::filter()
 [31mx[30m [34mdplyr[30m::[32mlag()[30m    masks [34mstats[30m::lag()[39m
 "
 "0","library(glue)"
 "2","
-Attaching package: ‘glue’
+Attachement du package : ‘glue’
 
 "
 "2","The following object is masked from ‘package:dplyr’:
