@@ -1,9 +1,9 @@
 {
-    "path" : "~/GitHub/maxlarter.github.io",
-    "sortOrder" : [
+    "path": "~/GitHub/maxlarter.github.io",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "ascending": true,
+            "columnIndex": 2
         }
     ]
 }
