@@ -5,8 +5,6 @@
 "0",""
 "0",""
 "0","library(scholar)"
-"2","The R.cache package needs to create a directory that will hold cache files. It is convenient to use  ‘C:\Users\maxim\AppData\Local\R\R.cache’ because it follows the standard on your operating system and it remains also after restarting R. Do you wish to create the 'C:\Users\maxim\AppData\Local\R\R.cache' directory? If not, a temporary directory (C:\Users\maxim\AppData\Local\Temp\RtmpyMppRR/.Rcache) that is specific to this R session will be used. [Y/n]: "
-"0","Y"
 "0","library(tidyverse)"
 "2","Registered S3 methods overwritten by 'dbplyr':
   method         from
