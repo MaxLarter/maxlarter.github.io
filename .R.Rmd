@@ -77,7 +77,7 @@ html_3 <- map2(names(html_2) %>% paste0("<h3>", ., "</h3>"), html_2, c) %>% unli
 
 html_4 <- c(
   paste0('<p><i>Last updated ',
-         format(Sys.Date(), format="%d/%mm/%Y"),
+         format(Sys.Date(), format="%d/%m/%Y"),
          ' &ndash; Pulled automatically from my <a href="https://scholar.google.com/citations?user=-WJKy_EAAAAJ&hl=en">Google Scholar profile</a>. See <a href="https://thackl.github.io/automatically-update-publications-with-R-scholar" target="_blank">this post</a> for how it works. See the code adapted to my usage <a href = "https://github.com/MaxLarter/maxlarter.github.io/blob/master/.R.Rmd" target="_blank">here</a>.</i></p>'), html_3)
 
 
