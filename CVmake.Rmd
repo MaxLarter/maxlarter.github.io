@@ -26,32 +26,13 @@ library(vitae)
 
 ```{r}
 
-datadrivencv::use_datadriven_cv(
-  full_name = "Maximilian Larter",
-  data_location = 'https://docs.google.com/spreadsheets/d/11yfQvOxippBF5MKjtJX3wm06NARPvzLw6pI12wRvGnc',
-  pdf_location = "https://github.com/MaxLarter/maxlarter.github.io/tree/master/cv/MaxLarter_CV.pdf",
-  html_location = "https://maxlarter.github.io/cv/",
-  source_location = "https://github.com/MaxLarter/cv",
-  use_network_logo = FALSE,
-  output_dir = paste0(getwd(),'/data/cv/'), create_output_dir = TRUE,
-)
-```
-
-```{r}
-
 # Knit the HTML version
-rmarkdown::render("data/cv/cv.rmd",
+rmarkdown::render("cv/cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv_ML.html")
-
-# Knit the PDF version to temporary html location
-tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("data/cv/cv.rmd",
-                  params = list(pdf_mode = TRUE),
-                  output_file = tmp_html_cv_loc)
+                  output_file = "cv.html")
 
 # Convert to PDF using Pagedown
-pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "cv.pdf")
+pdfCVname<-paste0("CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv/cv.html", pdfCVname)
 
 ```
