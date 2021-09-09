@@ -187,18 +187,16 @@ Last updated on `r Sys.Date()`.
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _maxlarter.github.io/cv_")
+  cat("View this CV online at _maxlarter.github.io/cv_")
 }
 ```
 
 Contact {#contact}
 --------------------------------------------------------------------------------
-- <i class="fa fa-envelope"></i> maximilian.larter@gmail.com
+- <i class="fa fa-envelope"></i> maximilian.larter_AT_gmail.com
 - <i class="fa fa-twitter"></i> [.@MaxLarter](twitter.com/maxlarter)
 - <i class="fa fa-link"></i> [maxlarter.github.io](maxlarter.github.io)
-- <i class="fa fa-phone"></i> +31 651310673
-- <i class="fa fa-home"></i> Biogeco, Bat B2, Allée Geoffroy St Hilaire<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pessac, France
-- <i class="fa fa-birthday-cake"></i> August 5th, 1987. Derby (UK)
+
 
 
 Skills {#skills}

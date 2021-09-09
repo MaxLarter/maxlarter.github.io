@@ -1,0 +1,43 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r loads_packs, include = F, echo = F}
+# the first time you may need to re-reun this:
+#install.packages("scholar")
+#install.packages("tidyverse")
+#install.packages("glue")
+
+
+library(scholar)
+library(tidyverse)
+library(glue)
+library(vitae)
+#devtools::install_github("nstrayer/datadrivencv")
+```
+
+```{r makeHTMLversions}
+# Knit the HTML version
+rmarkdown::render("cv/cv.Rmd",
+                  params = list(pdf_mode = FALSE),
+                  output_file = "cv.html")
+```
+
+
+```{r makeHTMLpriv}
+rmarkdown::render("cv/cv - priv.Rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = "cv/cv_priv.html")
+```
+
+
+
+```{r makePDFcv}
+# Convert to PDF using Pagedown
+pdfCVname<-paste0("cv/CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv/cv_priv.html", pdfCVname)
+```
+
+

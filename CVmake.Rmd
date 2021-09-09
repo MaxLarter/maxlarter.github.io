@@ -24,15 +24,26 @@ library(vitae)
 #devtools::install_github("nstrayer/datadrivencv")
 ```
 
-```{r}
-
+```{r makeHTMLversions}
 # Knit the HTML version
 rmarkdown::render("cv/cv.Rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "cv.html")
-
-# Convert to PDF using Pagedown
-pdfCVname<-paste0("CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
-pagedown::chrome_print("cv/cv.html", pdfCVname)
-
 ```
+
+
+```{r makeHTMLpriv}
+rmarkdown::render("cv/cv - priv.Rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = "cv/cv_priv.html")
+```
+
+
+
+```{r makePDFcv}
+# Convert to PDF using Pagedown
+pdfCVname<-paste0("cv/CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv/cv_priv.html", pdfCVname)
+```
+
+
