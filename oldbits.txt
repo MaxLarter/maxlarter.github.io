@@ -1,0 +1,8 @@
+<h3>Herb hydraulics, positive root pressure and drought resistance</h3>
+		
+		<p>I'm currently doing a post-doc with <a href="https://www.naturalis.nl/en/frederic-lens" target="_blank">Frederic Lens</a> in the <a href="https://www.naturalis.nl/en/understanding-evolution" target="_blank">Understanding Evolution research group at Naturalis Biodiversity Center</a> in Leiden (NL), where I'm working on drought-resistance and root pressure in herbaceous plants, in particular in family Brassicaceae. This project combines classical plant hydraulics adapted to non-woody species (minimum water potential measurements, cavitation resistance, hydraulic conductance) with xylem anatomy (optical and scanning electron microscopy), micro-computed tomography in-vivo visualization and modeling to aim for a holistic vision of herb hydraulic functioning during drought. </p>
+		
+		<p>Some plants are known to develop positive root pressure, and this process has been hypothesized to aid in recovering from drought by refilling xylem conduits, thereby allowing growth to resume. We hope to elucidate this potential role of positive root pressure in providing plants with a way to avoid death during drought.</p>
+		
+		<p>We hope to obtain these data across multiple species within a range of environmental conditions to gain insight into how these traits are coordinated at evolutionary timescales. Finally, we hope to use this dataset to look for support of the hypothesis linking the evolution of increased stem woodiness in herbs to an increase in drought tolerance.</p>
+		
