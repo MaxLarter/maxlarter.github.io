@@ -15,12 +15,13 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("scholar")
 #install.packages("tidyverse")
 #install.packages("glue")
-
+# install.packages("ggimage")
 
 library(scholar)
 library(tidyverse)
 library(glue)
 library(vitae)
+library(ggimage)
 #devtools::install_github("nstrayer/datadrivencv")
 ```
 
@@ -28,7 +29,7 @@ library(vitae)
 # Knit the HTML version
 rmarkdown::render("cv/cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv.html")
+                  output_file = "cv2.html")
 ```
 
 
