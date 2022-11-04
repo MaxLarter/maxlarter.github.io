@@ -39,7 +39,7 @@ CV_larter.csv <- where to update CV items:
 
 put NA where empty or not needed
 when updating pub list on website:
-get pdf and add to _pdfs folder with sane name (avoid too many spaces)
+get pdf and add to _pdfs folder with same name (avoid too many spaces)
 
 get exact title of paper, and url of the file on the github _pdfs folder and add them to publications/pdf_urls.csv => formatted like this title,pdf_url - replace spaces with '%20'
 
