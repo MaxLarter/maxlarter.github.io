@@ -29,7 +29,7 @@ library(ggimage)
 # Knit the HTML version
 rmarkdown::render("cv/cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv2.html")
+                  output_file = "cv.html")
 ```
 
 
