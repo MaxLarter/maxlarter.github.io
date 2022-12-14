@@ -297,23 +297,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -518,7 +512,7 @@ rmarkdown::render(&quot;cv/cv.Rmd&quot;,
   |......................................................................| 100%
 ##   ordinary text without R code</code></pre>
 <pre><code>## output file: cv.knit.md</code></pre>
-<pre><code>## &quot;C:/Program Files/RStudio/bin/quarto/bin/tools/pandoc&quot; +RTS -K512m -RTS cv.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash-implicit_figures --output cv.html --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\bookdown\rmarkdown\lua\custom-environment.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\pagebreak.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\latex-div.lua&quot; --embed-resources --standalone --wrap preserve &quot;--mathjax=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; --metadata newpage_html_class=&quot;page-break-after&quot; --section-divs --template &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\pagedown\resources\html\resume.html&quot; --highlight-style pygments --css styles.css --include-in-header &quot;C:\Users\MAXIMI~1\AppData\Local\Temp\RtmpSoNL61\rmarkdown-str5b447b637f9b.html&quot;</code></pre>
+<pre><code>## &quot;C:/Program Files/RStudio/bin/quarto/bin/tools/pandoc&quot; +RTS -K512m -RTS cv.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash-implicit_figures --output cv.html --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\bookdown\rmarkdown\lua\custom-environment.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\pagebreak.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\latex-div.lua&quot; --embed-resources --standalone --wrap preserve &quot;--mathjax=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; --metadata newpage_html_class=&quot;page-break-after&quot; --section-divs --template &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\pagedown\resources\html\resume.html&quot; --highlight-style pygments --css styles.css --include-in-header &quot;C:\Users\MAXIMI~1\AppData\Local\Temp\RtmpCQ4YcE\rmarkdown-str79f863b84442.html&quot;</code></pre>
 <pre><code>## 
 ## Output created: cv.html</code></pre>
 <pre class="r"><code>rmarkdown::render(&quot;cv/cv - priv.Rmd&quot;,
@@ -667,7 +661,7 @@ rmarkdown::render(&quot;cv/cv.Rmd&quot;,
   |......................................................................| 100%
 ##   ordinary text without R code</code></pre>
 <pre><code>## output file: G:/Autres ordinateurs/My Laptop/GitHub/maxlarter.github.io/cv---priv.knit.md</code></pre>
-<pre><code>## &quot;C:/Program Files/RStudio/bin/quarto/bin/tools/pandoc&quot; +RTS -K512m -RTS &quot;G:/Autres ordinateurs/My Laptop/GitHub/maxlarter.github.io/cv---priv.knit.md&quot; --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash-implicit_figures --output pandoc5b444a916fcf.html --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\bookdown\rmarkdown\lua\custom-environment.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\pagebreak.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\latex-div.lua&quot; --embed-resources --standalone --wrap preserve &quot;--mathjax=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; --metadata newpage_html_class=&quot;page-break-after&quot; --section-divs --template &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\pagedown\resources\html\resume.html&quot; --highlight-style pygments --css styles.css --include-in-header &quot;C:\Users\MAXIMI~1\AppData\Local\Temp\RtmpSoNL61\rmarkdown-str5b4449dc14e.html&quot;</code></pre>
+<pre><code>## &quot;C:/Program Files/RStudio/bin/quarto/bin/tools/pandoc&quot; +RTS -K512m -RTS &quot;G:/Autres ordinateurs/My Laptop/GitHub/maxlarter.github.io/cv---priv.knit.md&quot; --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash-implicit_figures --output pandoc79f8183274c2.html --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\bookdown\rmarkdown\lua\custom-environment.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\pagebreak.lua&quot; --lua-filter &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\rmarkdown\rmarkdown\lua\latex-div.lua&quot; --embed-resources --standalone --wrap preserve &quot;--mathjax=https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; --metadata newpage_html_class=&quot;page-break-after&quot; --section-divs --template &quot;C:\Users\Maximilien\AppData\Local\R\win-library\4.2\pagedown\resources\html\resume.html&quot; --highlight-style pygments --css styles.css --include-in-header &quot;C:\Users\MAXIMI~1\AppData\Local\Temp\RtmpCQ4YcE\rmarkdown-str79f811ef1843.html&quot;</code></pre>
 <pre><code>## 
 ## Output created: cv/cv_priv.html</code></pre>
 <pre class="r"><code># Convert to PDF using Pagedown
