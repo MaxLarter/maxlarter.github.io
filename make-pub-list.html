@@ -359,9 +359,9 @@ display: none;
 <pre class="r"><code># escape some special chars, german umlauts, ...
 char2html &lt;- function(x){
   dictionary &lt;- data.frame(
-    symbol = c(&quot;ä&quot;,&quot;ö&quot;,&quot;ü&quot;,&quot;Ä&quot;, &quot;Ö&quot;, &quot;Ü&quot;, &quot;ß&quot;, &quot;á&quot;, &quot;ñ&quot;, &quot;é&quot;, &quot;è&quot;, &quot;«&quot;, &quot;»&quot;, &quot;à&quot;),
+    symbol = c(&quot;ä&quot;,&quot;ö&quot;,&quot;ü&quot;,&quot;Ä&quot;, &quot;Ö&quot;, &quot;Ü&quot;, &quot;ß&quot;, &quot;á&quot;, &quot;ñ&quot;, &quot;é&quot;, &quot;è&quot;, &quot;«&quot;, &quot;»&quot;, &quot;à&quot;, &quot;xa0&quot;),
     html = c(&quot;&amp;auml;&quot;,&quot;&amp;ouml;&quot;, &quot;&amp;uuml;&quot;,&quot;&amp;Auml;&quot;,
-             &quot;&amp;Ouml;&quot;, &quot;&amp;Uuml;&quot;,&quot;&amp;szlig;&quot;, &quot;&amp;aacute;&quot;, &quot;&amp;ntilde;&quot;, &quot;&amp;eacute;&quot;, &quot;&amp;egrave;&quot;, &quot;&amp;laquo;&quot;, &quot;&amp;raquo;&quot;, &quot;&amp;agrave;&quot;))
+             &quot;&amp;Ouml;&quot;, &quot;&amp;Uuml;&quot;,&quot;&amp;szlig;&quot;, &quot;&amp;aacute;&quot;, &quot;&amp;ntilde;&quot;, &quot;&amp;eacute;&quot;, &quot;&amp;egrave;&quot;, &quot;&amp;laquo;&quot;, &quot;&amp;raquo;&quot;, &quot;&amp;agrave;&quot;, &quot; &quot;))
   for(i in 1:dim(dictionary)[1]){
     x &lt;- gsub(dictionary$symbol[i],dictionary$html[i],x)
   }
@@ -377,28 +377,39 @@ html_1 &lt;- get_publications(MaxLarter)</code></pre>
 ## de s&lt;82&gt;rie du volume est 9E69-F935&#39; to a wide string</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 2 is invalid</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;
-## R&lt;82&gt;pertoire de C:\Users\Maximilien\AppData\Local\Temp\RtmpSMga2F&#39; to a wide
+## R&lt;82&gt;pertoire de C:\Users\Maximilien\AppData\Local\Temp\Rtmp4MWjKH&#39; to a wide
 ## string</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 4 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;11/02/2024
-## 14:38 1&lt;ff&gt;367 file17f8358d4a3d&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 8 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;11/02/2024
-## 14:38 1&lt;ff&gt;367 file17f84870f0c&#39; to a wide string</code></pre>
+<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
+## 11:15 1&lt;ff&gt;367 file2dc433c24612&#39; to a wide string</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 9 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;11/02/2024
-## 14:38 1&lt;ff&gt;367 file17f869e4409f&#39; to a wide string</code></pre>
+<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
+## 11:15 1&lt;ff&gt;367 file2dc443eb2c06&#39; to a wide string</code></pre>
+<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 10 is invalid</code></pre>
+<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
+## 11:15 1&lt;ff&gt;367 file2dc4462f20d4&#39; to a wide string</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 11 is invalid</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39; 4 fichier(s)
 ## 4&lt;ff&gt;101 octets&#39; to a wide string</code></pre>
 <pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39; 3 R&lt;82&gt;p(s)
-## 738&lt;ff&gt;770&lt;ff&gt;702&lt;ff&gt;336 octets libres&#39; to a wide string</code></pre>
+## 721&lt;ff&gt;697&lt;ff&gt;406&lt;ff&gt;976 octets libres&#39; to a wide string</code></pre>
 <pre class="r"><code># pull pdf_urls matching GS titles
 # first write this to file
-write.csv(html_1 %&gt;%
+write_csv(html_1 %&gt;%
   as_tibble %&gt;% arrange(desc(year)), file = &quot;publications/publist.csv&quot;)
 # then load the pdf or URLs we want in the pub list # if you want to update new pub you NEED to add pdf link here or it will not show up
-pdf_urls_file&lt;-read.csv(&quot;publications/pdf_urls.csv&quot;, sep = &quot;,&quot;, header = T)
+pdf_urls_file &lt;- read_csv(&quot;publications/pdf_urls.csv&quot;, col_names = T)</code></pre>
+<pre><code>## Rows: 18 Columns: 2
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (2): title, pdf_url
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code># here must manually change an escape character \xa0 &lt;- unbreakable space or smth...
+# remove from title in both objects with mutate...
+html_1 %&gt;% mutate(title = case_when(author == &quot;M Larter, S Pfautsch, JC Domec, S Trueba, N Nagalingum, S Delzon&quot; ~ &quot;Aridity drove the evolution of extreme embolism resistance and the radiation of conifer genus Callitris&quot;, TRUE ~ title)) -&gt; html_1
+pdf_urls_file %&gt;% mutate(title = case_when(pdf_url == &quot;https://github.com/MaxLarter/maxlarter.github.io/blob/master/_pdfs/Larter_et_al_2017_New_Phytologist%20Aridity%20drove%20the%20evolution%20of%20extreme%20embolism%20resistance%20and%20the%20radiation%20of%20conifer%20genus%20Callitris.pdf&quot; ~ &quot;Aridity drove the evolution of extreme embolism resistance and the radiation of conifer genus Callitris&quot;, TRUE ~ title)) -&gt; pdf_urls_file
 
 html_1_2&lt;-merge(html_1, pdf_urls_file, by = &quot;title&quot;)
 
