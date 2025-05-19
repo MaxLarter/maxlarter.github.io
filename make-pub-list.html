@@ -372,28 +372,9 @@ char2html &lt;- function(x){
 MaxLarter &lt;- &quot;-WJKy_EAAAAJ&amp;hl&quot;
 
 # pull from google
-html_1 &lt;- get_publications(MaxLarter)</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39; Le num&lt;82&gt;ro
-## de s&lt;82&gt;rie du volume est 9E69-F935&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 2 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;
-## R&lt;82&gt;pertoire de C:\Users\Maximilien\AppData\Local\Temp\Rtmp4MWjKH&#39; to a wide
-## string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 4 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
-## 11:15 1&lt;ff&gt;367 file2dc433c24612&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 9 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
-## 11:15 1&lt;ff&gt;367 file2dc443eb2c06&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 10 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39;01/10/2024
-## 11:15 1&lt;ff&gt;367 file2dc4462f20d4&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): input string 11 is invalid</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39; 4 fichier(s)
-## 4&lt;ff&gt;101 octets&#39; to a wide string</code></pre>
-<pre><code>## Warning in grep(pattern, bfr, value = TRUE): unable to translate &#39; 3 R&lt;82&gt;p(s)
-## 721&lt;ff&gt;697&lt;ff&gt;406&lt;ff&gt;976 octets libres&#39; to a wide string</code></pre>
-<pre class="r"><code># pull pdf_urls matching GS titles
+html_1 &lt;- get_publications(MaxLarter)
+
+# pull pdf_urls matching GS titles
 # first write this to file
 write_csv(html_1 %&gt;%
   as_tibble %&gt;% arrange(desc(year)), file = &quot;publications/publist.csv&quot;)
