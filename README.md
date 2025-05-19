@@ -38,14 +38,18 @@ CV_larter.csv <- where to update CV items:
 	order = to specify the order in which they are printed out (only used for education at the moment)
 
 put NA where empty or not needed
+
+when updating CV:
+add new item to CV_larter.csv, save and knit, then commit+push in github. Webstie will automatically reflect new item in CV.html
+
 when updating pub list on website:
 get pdf and add to _pdfs folder with same name (avoid too many spaces)
 
-get exact title of paper, and url of the file on the github _pdfs folder and add them to publications/pdf_urls.csv => formatted like this title,pdf_url - replace spaces with '%20'
+get exact title of paper (matching the google scholar line), and url of the file on the github _pdfs folder and add them to publications/pdf_urls.csv => formatted like this title,pdf_url - replace spaces with '%20'
 
-then you can run knit "make pub list.Rmd" to update the publications table on the website 
+then you can knit "make pub list.Rmd" to update the publications table on the website 
 
-also edit the CV file "CV_larter.csv" with the new item:
+ALSO edit the CV file "CV_larter.csv" with the new item:
 note the whole citation here is in the "title column of the csv file surrounded by ""
 My name is **bolded**, journal is *italics*, check link to pdf (same as above in publication website page)
 section is 'academic_articles', 
@@ -54,7 +58,7 @@ rest is NAs
 
 NA,"Author list, ..., ..., **M Larter** et al. (YEAR) Title blablabla, *Journal italics* [pdf](https://github.com/MaxLarter/maxlarter.github.io/blob/master/_pdfs/link_to%20pdf.pdf)",NA,YEAR,YEAR,NA,NA,NA,academic_articles,NA
 
-save and its good to output
+save and its good to output, so knit CVmake.Rmd
 
 
 
