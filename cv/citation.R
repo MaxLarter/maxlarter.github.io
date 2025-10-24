@@ -41,7 +41,7 @@ if (!is.null(cites)) {
 }
 
 cites <- fromJSON("citation.json")
-cites <- slice(cites, tail(row_number(), 6))
+cites <- slice(cites, tail(row_number(), 10)) # adjust number of years to show on plot (initially 6)
 cites$year <- factor(cites$year)
 
 p <- ggplot(cites, aes(cites, year)) + 
