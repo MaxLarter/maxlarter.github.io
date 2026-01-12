@@ -195,7 +195,7 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> maximilian.larter_AT_gmail.com
 - <i class="fa fa-twitter"></i> [.@MaxLarter](twitter.com/maxlarter)
-- <i class="fa fa-link"></i> [maxlarter.github.io](maxlarter.github.io)
+- <i class="fa fa-link"></i> [maxlarter.github.io](https://maxlarter.github.io)
 
 
 
@@ -208,13 +208,14 @@ Skills {#skills}
 
 **Software, statistics**
 
-- SAS, R, Inkscape
+- SAS, R, git, Python
 - Phylogenetic comparative methods
 - GIS
 
 **Plant physiology**
 
-- Plant hydraulics (Cavitron, optical technique)
+- plant hydraulics (Cavitron, optical technique)
+- plant frost resistance
 - gas exchange, sapflow, dendrometry
 - wood anatomy – microscopy (optical and SEM)
 - anthocyanin extractions and separation (HPLC)
@@ -237,8 +238,7 @@ Maximilian Larter {#title}
 --------------------------------------------------------------------------------
 
 I am a plant ecophysiologist and an evolutionary biologist. <br/>
-My primary research interest is understanding how plants adapt to their environment, in particular in the current climate crisis, with rapidly changing temperature and rainfall patterns. By examining functional trait distributions of living and extinct lineages, we gain insight into the evolution of key physiological traits and functions, as well as the genetic mechanisms enabling these adaptations.<br/>
-This knowledge is critical to predict the impacts of climate change on the distributions of wild species and crop health.
+My primary research interest is understanding how plants respond and adapt to their environment, in particular in the current climate crisis. I study functional traits to gain insights into key physiological functions, and to predict the impacts of climate change on the performance, survival, and future distributions of wild and cultivated species.
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
