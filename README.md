@@ -40,7 +40,7 @@ CV_larter.csv <- where to update CV items:
 put NA where empty or not needed
 
 when updating CV:
-add new item to CV_larter.csv, save and knit, then commit+push in github. Webstie will automatically reflect new item in CV.html
+add new item to CV_larter.csv, save and knit, then commit+push in github. Website will automatically reflect new item in CV.html
 
 when updating pub list on website:
 get pdf and add to _pdfs folder with same name (avoid too many spaces)
@@ -57,6 +57,8 @@ start and end is twice the same year
 rest is NAs
 
 NA,"Author list, ..., ..., **M Larter** et al. (YEAR) Title blablabla, *Journal italics* [pdf](https://github.com/MaxLarter/maxlarter.github.io/blob/master/_pdfs/link_to%20pdf.pdf)",NA,YEAR,YEAR,NA,NA,NA,academic_articles,NA
+
+Remember if you change structure / content in CV.Rmd, mirror these changes in CV priv.Rmd...
 
 save and its good to output, so knit CVmake.Rmd
 

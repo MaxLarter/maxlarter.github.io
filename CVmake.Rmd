@@ -39,12 +39,19 @@ rmarkdown::render("cv/cv - priv.Rmd",
                   output_file = "cv/cv_priv.html")
 ```
 
+```{r makeHTMLshort}
+rmarkdown::render("cv/cv_priv_short.Rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = "cv/cv_priv_short.html")
+```
 
 
 ```{r makePDFcv}
 # Convert to PDF using Pagedown
 pdfCVname<-paste0("cv/CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
 pagedown::chrome_print("cv/cv_priv.html", pdfCVname)
+pdfCVname2<-paste0("cv/short_CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv/cv_priv_short.html", pdfCVname2)
 ```
 
 
