@@ -40,7 +40,7 @@ CV_larter.csv <- where to update CV items:
 put NA where empty or not needed
 
 when updating CV:
-add new item to CV_larter.csv, save and knit, then commit+push in github. Website will automatically reflect new item in CV.html
+add new item to cv/CV_larter.csv (+CV_larter_short.csv), save and knit, then commit+push in github. Website will automatically reflect new item in CV.html
 
 when updating pub list on website:
 get pdf and add to _pdfs folder with same name (avoid too many spaces)
