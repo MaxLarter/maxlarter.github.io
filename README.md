@@ -62,7 +62,15 @@ Remember if you change structure / content in CV.Rmd, mirror these changes in CV
 
 save and its good to output, so knit CVmake.Rmd
 
+to update website: (cmd in windows)
+cd to directory
+g:
+cd G:\Other computers\My Laptop\GitHub\maxlarter.github.io
+git pull
+git commit -a -m "commit message goes here"
+git push
 
+(or manually from R studio / github desktop)
 
 
 credits:
