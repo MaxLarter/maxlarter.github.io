@@ -194,7 +194,7 @@ if(PDF_EXPORT){
 Contact {#contact}
 --------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> maximilian.larter_AT_gmail.com
-- <i class="fa fa-twitter"></i> [.@MaxLarter](twitter.com/maxlarter)
+- <i class="fa fa-twitter"></i> [twitter](https://x.com/maxlarter) / [Bluesky](https://bsky.app/profile/maxlarter.bsky.social)
 - <i class="fa fa-link"></i> [maxlarter.github.io](https://maxlarter.github.io)
 
 
@@ -208,24 +208,27 @@ Skills {#skills}
 
 **Software, statistics**
 
-- SAS, R, git, Python
-- Phylogenetic comparative methods
-- GIS
+- R, git, Python, SAS, qGIS
+- Phylogenetics
+- Modelling
 
 **Plant physiology**
 
 - plant hydraulics (Cavitron, optical technique)
 - plant frost resistance
-- gas exchange, sapflow, dendrometry
-- wood anatomy – microscopy (optical and SEM)
-- anthocyanin extractions and separation (HPLC)
+- gas exchange, sapflow
+- wood anatomy, microscopy
 
 **Molecular biology, phylogenetics**
 
-- DNA/RNA extractions
-- qPCR
-- Next Gen Sequencing library prep
-- RAxML, BEAST, MrBayes
+- DNA/RNA extractions, qPCR
+- NGS library prep
+
+**Academic service**
+
+- Peer reviews: (>20)
+[New Phytol, Tree Phys, PCE, Am J Bot, BMC Evol. Biol.](https://www.webofscience.com/wos/author/record/I-5800-2019)
+- Postdoc & short contract rep. CU Biogeco 2021-2022
 
 <br>
 
@@ -255,6 +258,7 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 <br>
+<br>
 
 ::: aside
 
@@ -266,7 +270,14 @@ print_section(position_data, 'education')
 <br>
 
 
-
+```{r}
+library(scholar)
+MaxLarter <- "-WJKy_EAAAAJ&hl"
+h_index <- predict_h_index(MaxLarter)[1,2]
+cites_total <- sum(get_citation_history(MaxLarter)[,2])
+cit_stats <- paste0(cites_total," citations, h-index ",h_index)
+cat(noquote(unlist(cit_stats)))
+```
 
 ![](citation.png){width=100%}
 
@@ -282,8 +293,6 @@ print_section(position_data, 'academic_articles')
 ```
 
 
-<br>
-
 Grants and funding  {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -292,6 +301,8 @@ print_section(position_data, 'Grants_&_funding')
 ```
 
 
+<br>
+<br>  
 <br>
 <br>
 
@@ -302,16 +313,8 @@ Outreach and Press (by me) {data-icon=newspaper}
 print_section(position_data, 'Outreach_Press_by_me')
 ```
 
-
-
 <br>
-<br/>
 <br>
-<br/>
-<br>
-<br/>
-<br>
-<br/>
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -320,8 +323,9 @@ Teaching Experience {data-icon=chalkboard-teacher}
 print_section(position_data, 'Teaching_Experience')
 ```
 
-<br>
 
+<br>
+<br>
 
 Conferences and Presentations {data-icon=group}
 --------------------------------------------------------------------------------
@@ -330,6 +334,7 @@ Conferences and Presentations {data-icon=group}
 print_section(position_data, 'Conferences_Presentations')
 ```
 
+<br>
 <br>
 
 ```{r}

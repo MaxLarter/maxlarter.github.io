@@ -194,7 +194,7 @@ if(PDF_EXPORT){
 Contact {#contact}
 --------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> maximilian.larter@gmail.com
-- <i class="fa fa-twitter"></i> [.@MaxLarter](twitter.com/maxlarter)
+- <i class="fa fa-twitter"></i> [twitter](https://x.com/maxlarter) / [Bluesky](https://bsky.app/profile/maxlarter.bsky.social)
 - <i class="fa fa-link"></i> [maxlarter.github.io](https://maxlarter.github.io)
 - <i class="fa fa-phone"></i> +33 679709275
 - <i class="fa fa-home"></i> 10 rue HG Wells, <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 33600 Pessac, France
@@ -205,8 +205,8 @@ Contact {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 - Native speaker in **English** and **French**
-- data analysis, statistics (SAS, R, git), modelling
-- QGIS, Inkscape
+- data analysis, stats, modelling, GIS
+(R, python, git, SAS)
 - Plant hydraulics, physiology, gas exchange
 - Molecular biology, phylogenetics
 
@@ -220,12 +220,21 @@ Skills {#skills}
 
 Citations {#skills}
 --------------------------------------------------------------------------------
-873 citations, h-index 12
+```{r}
+library(scholar)
+MaxLarter <- "-WJKy_EAAAAJ&hl"
+h_index <- predict_h_index(MaxLarter)[1,2]
+cites_total <- sum(get_citation_history(MaxLarter)[,2])
+cit_stats <- paste0(cites_total," citations, h-index ",h_index)
+cat(noquote(unlist(cit_stats)))
+
+```
 ![](citation.png){width=100%}
 <br>
 <br>
 <h4> [full publication list](https://maxlarter.github.io/publications/publications.html)</h4>
 <br>
+
 
 Main
 ================================================================================
