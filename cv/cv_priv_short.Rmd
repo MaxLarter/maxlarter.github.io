@@ -148,13 +148,13 @@ fill_nas <- function(column){
 ```
 
 ```{r, include=FALSE}
-source("citation.R", local = knitr::knit_global())
+source("cv/citation.R", local = knitr::knit_global())
 # or sys.source("your-script.R", envir = knitr::knit_global())
 ```
 
 ```{r, include=FALSE}
 # Load csv with position info
-position_data <- read_csv('CV_larter_short.csv') %>% 
+position_data <- read_csv('cv/CV_larter_short.csv') %>% 
   mutate_all(fill_nas) %>% 
   arrange(order, desc(end)) %>% 
   mutate(id = 1:n()) %>% 
@@ -298,7 +298,7 @@ print_section(position_data, 'Teaching_Experience')
 
 ```{r, include=FALSE}
 # Load csv with position info
-position_data2 <- read_csv('CV_larter.csv') %>% 
+position_data2 <- read_csv('cv/CV_larter.csv') %>% 
   mutate_all(fill_nas) %>% 
   arrange(order, desc(end)) %>% 
   mutate(id = 1:n()) %>% 
