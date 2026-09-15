@@ -27,31 +27,31 @@ library(ggimage)
 
 ```{r makeHTMLversions}
 # Knit the HTML version
-rmarkdown::render("cv/cv.Rmd",
+rmarkdown::render("cv.Rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "cv.html")
 ```
 
 
 ```{r makeHTMLpriv}
-rmarkdown::render("cv/cv - priv.Rmd",
+rmarkdown::render("cv - priv.Rmd",
                   params = list(pdf_mode = TRUE),
-                  output_file = "cv/cv_priv.html")
+                  output_file = "cv_priv.html")
 ```
 
 ```{r makeHTMLshort, eval = FALSE}
-rmarkdown::render("cv/cv_priv_short.Rmd",
+rmarkdown::render("cv_priv_short.Rmd",
                   params = list(pdf_mode = TRUE),
-                  output_file = "cv/cv_priv_short.html")
+                  output_file = "cv_priv_short.html")
 ```
 
 
 ```{r makePDFcv}
 # Convert to PDF using Pagedown
-pdfCVname<-paste0("cv/CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
-pagedown::chrome_print("cv/cv_priv.html", pdfCVname)
-pdfCVname2<-paste0("cv/short_CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
-pagedown::chrome_print("cv/cv_priv_short.html", pdfCVname2)
+pdfCVname<-paste0("CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv_priv.html", pdfCVname)
+pdfCVname2<-paste0("short_CV_Maximilian Larter  EN - ",Sys.Date(),".pdf")
+pagedown::chrome_print("cv_priv_short.html", pdfCVname2)
 ```
 
 
